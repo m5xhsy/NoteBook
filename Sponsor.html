@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/img/favicon.ico">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/img/favicon.ico">
     <title>Sponsor</title>
     <meta name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui"/>
     <!--禁止缩放-->
     <!--    <link rel="stylesheet"-->
-    <!--          href="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/css/sponsor.css">-->
+    <!--          href="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/css/sponsor.css">-->
     <style>
         html,
         html > body {
@@ -74,7 +74,7 @@
             height: 70px;
             line-height: 70px;
             color: #fff;
-            background: #ffd886 url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/img/like.svg) no-repeat center 10px;
+            background: #ffd886 url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/img/like.svg) no-repeat center 10px;
             background-size: 20px;
             border-radius: 35px;
             text-align: center;
@@ -130,11 +130,11 @@
         }
 
         #donateBox #PayPal {
-            background-image: url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/img/paypal.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/img/paypal.svg);
         }
 
         #donateBox > #QQPay {
-            background-image: url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/img/QQqianbao.png);
+            background-image: url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/img/QQqianbao.png);
             line-height: 28px;
         }
 
@@ -143,11 +143,11 @@
         }
 
         #donateBox #AliPay {
-            background-image: url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/img/alipay.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/img/alipay.svg);
         }
 
         #donateBox #WeChat {
-            background-image: url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/img/wechat.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/img/wechat.svg);
         }
 
         #QRBox {
@@ -183,7 +183,7 @@
             height: 24px;
             left: calc(50% + 100px);
             top: calc(50% - 30px);
-            background: no-repeat center center url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/img/github.svg);
+            background: no-repeat center center url(https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/img/github.svg);
             background-size: contain;
             opacity: 0.3;
             transform: rotatez(15deg);
@@ -308,16 +308,16 @@
 <div id="QRBox" class="pos-f left-100">
     <div id="MainBox"></div>
 </div>
-<!--<script async src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/js/sponsor.js"></script>-->
+<!--<script async src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/js/sponsor.js"></script>-->
 <script>
     const bd = document.querySelector('body')
     const qbox = bd.querySelector('#QRBox')
     const mbox = bd.querySelector('#MainBox')
     const dbox = bd.querySelector('#donateBox')
 
-    const qqr = 'https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/img/QQPayQR.png'
-    const aqr = 'https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/img/AliPayQR.png'
-    const wqr = 'https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/sponsor-plugin/img/WeChatQR.png'
+    const qqr = 'https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/img/QQPayQR.png'
+    const aqr = 'https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/img/AliPayQR.png'
+    const wqr = 'https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/img/WeChatQR.png'
 
     const showQR = (QR) => {
         if (QR) mbox.style.backgroundImage = `url(${QR})`

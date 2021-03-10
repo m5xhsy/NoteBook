@@ -1,8 +1,9 @@
 <center>
 <a href='/'>
-	<img src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@main/statics/img/logo.png" width=128>
+	<img src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/img/logo.png" width=128>
 </a>
 </center>
+
 
 
 <h2> AI & CS & SE</h2>
