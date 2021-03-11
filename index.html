@@ -11,7 +11,8 @@
     <!-- 谷歌站点收录 -->
     <!--    <meta name="google-site-verification" content="qTFCf1hJ275saQ7H1kin5t2DVpznBKAj0Gi50XMOVMo"/>-->
     <!-- 百度站点收录-->
-    <!--    <meta name="baidu-site-verification" content="SZyWUIzWiU"/>-->
+    <meta name="baidu-site-verification" content="code-6B7wt9r6I5" />
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/css/vue.css">
     <!-- 支持 LaTex 语言 -->
@@ -29,9 +30,9 @@
     <!--  aplayer播放器  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/css/APlayer.min.css">
     <!-- 右键菜单 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/right-button-plugin/right-button.css">
+    <link rel="stylesheet" href="./statics/right-button-plugin/right-button.css">
+<!--        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/right-button-plugin/right-button.css">-->
     <style>
-
         /*加重描述strong*/
         .markdown-section strong {
             color: rgb(239, 112, 96);
@@ -388,7 +389,22 @@
         }
 
 
-    </style>
+        <
+        img src
+
+        =
+        "../../cursor.png"
+        height
+
+        =
+        "57"
+        width
+
+        =
+        "70"
+        /
+        ></style>
+    <script src="statics/right-button-plugin/right-button.js"></script>
 
 </head>
 <body>
@@ -396,13 +412,13 @@
 <div id="app">🏃‍🏃‍🏃‍💨 加载中...</div>
 <!--右键菜单-->
 <div id="right_menu">
-    <img class="susu" src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/right-button-plugin/susu.png" alt="">
+    <img class="susu" src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/right-button-plugin/susu.png"
+         alt="">
     <div class="right_me">
         <ul>
-            <li><a id="So" onclick="select_options()">🍌 刷 新</a></li>
-            <li><a href="https://github.com/m5xhsy/NoteBook">🍉 Fork </a></li>
-            <li><a href="https://github.com/m5xhsy/NoteBook">🍈 关 于</a></li>
-
+            <li onclick="select_options()"><a id="So">🍌 刷 新 一 下</a></li>
+            <li><a href="https://github.com/m5xhsy/NoteBook">🍉 Fork 文 档</a></li>
+            <li><a href="/#/关于/">🍈 关 于 本 站</a></li>
         </ul>
     </div>
 </div>
@@ -418,7 +434,8 @@
 </div>
 
 <!--右键菜单-->
-<script src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/right-button-plugin/right-button.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/right-button-plugin/right-button.js"></script>-->
+<script src="./statics/right-button-plugin/right-button.js"></script>
 <!-- 下面是点击特效 -->
 <canvas class="fireworks"></canvas>
 <script src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/js/anime.min.js"></script>
@@ -484,6 +501,9 @@
             p.radius = anime.random(getFontSize(), getFontSize() * 2);
             p.draw = function () {
                 ctx.beginPath();
+                if (p.radius < 0) {
+                    p.radius = 0-p.radius
+                }
                 ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true);
                 ctx.fillStyle = p.color;
                 ctx.fill();
@@ -766,7 +786,7 @@
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2020, 1, 1, 0, 0, 0); //北京时间2019-06-21 22:22:22
+        var t1 = Date.UTC(2021, 1, 1, 0, 0, 0); //北京时间2019-06-21 22:22:22
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);
@@ -787,7 +807,7 @@
 <script>
     if (!isMobile) {
         var rd = Math.ceil(Math.random() * 10);
-        var prob = 0.5;  // 出现小萝莉的概率
+        var prob = 0.7;  // 出现小萝莉的概率
         var xll_path = "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json";
         if (rd > prob * 10) {
             xll_path = "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json";

@@ -62,39 +62,40 @@ window.oncontextmenu = function (e) {
     oElement = document.elementFromPoint(event.x, event.y);
     if (oElement.tagName == "IMG") {
         flag = 1;
-        so.innerText = "🍌 保 存"
+        so.innerText = "🍌 保 存 图 片"
     } else if (selectionText) {
-        so.innerText = "🍍 复 制"
+        so.innerText = "🍍 复 制 文 字"
         flag = 2;
     } else {
-        so.innerText = "🍊 刷 新";
+        so.innerText = "🍊 刷 新 一 下";
         flag = 0
     }
 
-    console.log(oElement.tagName)
+    
     //取消默认的浏览器自带右键
     e.preventDefault();
     var evt = window.event || arguments[0];
     var menu = document.getElementById('right_menu');
+    menu.style.display = "block"
+    var menuH = menu.offsetHeight
+    var menuW = menu.offsetWidth
+    menu.style.display = "none"
+
     // var container = document.getElementById('container');
 
 
     /*获取当前鼠标右键按下后的位置，据此定义菜单显示的位置*/
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     pox =  evt.clientX;
-    poy = evt.clientY - 74+scrollTop;
-    if (pox + menu.offsetWidth > document.documentElement.clientWidth) {
+    poy = evt.clientY - 74 +scrollTop;
+    if (pox + menuW> document.documentElement.clientWidth) {
         // pox = document.documentElement.clientWidth - menu.offsetWidth - 3 //3是菜单栏阴影
-        pox = pox-menu.offsetWidth
+        pox = pox-menuW
     }
-    console.log(poy-scrollTop + menu.offsetHeight+ "----"+document.documentElement.clientHeight)
-    if (poy-scrollTop + menu.offsetHeight> document.documentElement.clientHeight) {
-        // poy = scrollTop+document.documentElement.clientHeight - menu.offsetHeight - 3 //3是菜单栏阴影
-        poy = poy-menu.offsetHeight+74
+    if (poy-scrollTop + menuH> document.documentElement.clientHeight) {
+        poy = poy-menuH+74
     }
-    console.log("x:"+evt.clientY)
-    console.log("poy:"+poy)
-    console.log("poy-scrollTop:"+(poy-scrollTop))
+
     if (poy-scrollTop  < 0) {
         poy = scrollTop-15
     }
@@ -102,18 +103,18 @@ window.oncontextmenu = function (e) {
     /*设置菜单可见*/
     menu.style.left = pox + "px";
     menu.style.top = poy + "px";
-    menu.style.visibility = "visible";
+    menu.style.display = "block";
 
 }
 
 
 window.onscroll = function () {
-    document.getElementById('right_menu').style.visibility = 'hidden';
+    document.getElementById('right_menu').style.display = 'none';
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 }
 
 window.onclick = function (e) {
     //关闭右键菜单
-    document.getElementById('right_menu').style.visibility = 'hidden';
+    document.getElementById('right_menu').style.display = 'none';
     //用户触发click事件就可以关闭了，因为绑定在window上，按事件冒泡处理，不会影响菜单的功能
 }

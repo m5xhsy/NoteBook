@@ -1,9 +1,9 @@
 #right_menu {
             position: absolute;
-            visibility: hidden;
+            display: none;
             /*left: 500px;*/
             /*top: 200px;*/
-            width: 100px;
+            width: 140px;
             margin: 0;
             padding: 0;
             z-index: 10000000;
@@ -14,7 +14,7 @@
 
         .susu {
             position: relative;
-            left: 33px;
+            left: 70px;
             top: 4px;
             width: 70px;
             height: 70px
@@ -29,17 +29,15 @@
             font-size: 14px;
             box-shadow: 3px 3px 3px 1px #35353594;
         }
-
-        #right_menu ul,li {
+        #right_menu>div>ul{
             list-style: none;
             margin: 0;
             padding: 0;
+        }
+        #right_menu>div li {
             line-height: 30px;
             border-radius: 10px;
-
-            /*transition: all 0.15s ease-in-out;*/
-
-
+            transition: all 0.1s ease-in-out;
         }
         #right_menu ul>li{
             text-align: center;
