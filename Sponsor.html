@@ -310,6 +310,9 @@
 </div>
 <!--<script async src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/sponsor-plugin/js/sponsor.js"></script>-->
 <script>
+    window.oncontextmenu = function (e) {
+        e.preventDefault();
+    }
     const bd = document.querySelector('body')
     const qbox = bd.querySelector('#QRBox')
     const mbox = bd.querySelector('#MainBox')

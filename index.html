@@ -28,7 +28,8 @@
 
     <!--  aplayer播放器  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/css/APlayer.min.css">
-
+    <!-- 右键菜单 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/right-button-plugin/right-button.css">
     <style>
 
         /*加重描述strong*/
@@ -386,12 +387,25 @@
             width: 275px;
         }
 
+
     </style>
 
 </head>
 <body>
-<div id="app">🏃‍🏃‍🏃‍💨 加载中...</div>
 
+<div id="app">🏃‍🏃‍🏃‍💨 加载中...</div>
+<!--右键菜单-->
+<div id="right_menu">
+    <img class="susu" src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/right-button-plugin/susu.png" alt="">
+    <div class="right_me">
+        <ul>
+            <li><a id="So" onclick="select_options()">🍌 刷 新</a></li>
+            <li><a href="https://github.com/m5xhsy/NoteBook">🍉 Fork </a></li>
+            <li><a href="https://github.com/m5xhsy/NoteBook">🍈 关 于</a></li>
+
+        </ul>
+    </div>
+</div>
 <div class="aside_container">
     <div class="advertisement">
         <div class="Tencent_code">
@@ -403,6 +417,8 @@
     </div>
 </div>
 
+<!--右键菜单-->
+<script src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/right-button-plugin/right-button.js"></script>
 <!-- 下面是点击特效 -->
 <canvas class="fireworks"></canvas>
 <script src="https://cdn.jsdelivr.net/gh/m5xhsy/NoteBook@master/statics/js/anime.min.js"></script>
@@ -821,7 +837,7 @@
         var ap = new APlayer({
             element: document.getElementById('player'),
             narrow: false,
-            autoplay: true,
+            autoplay: false,
             theme: '#FADFA3',
             loop: 'all',
             order: 'list',
@@ -831,7 +847,7 @@
             listMaxHeight: 3,
             listFolded: true,
             showlrc: true,
-            storageName:'m5xhsy',
+            storageName: 'm5xhsy',
             audio: [{
                 title: 'アメヲマツ、',
                 author: '美波(みなみ)',
