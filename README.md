@@ -31,14 +31,18 @@
 ## 🐍 Python
 
 * **【一】Python 基础**
-
-  * [1 - 内置模块](note/pyhton/模块/)
-
+  * [1 - 包管理工具]()
+  * [2 - 内置模块](note/Pyhton/Python基础/模块/)
+  * ......
 * **【二】Python 数据分析**  
-
-  
-
-
+  * [1 - jupyter的使用]()
+  * [2 - numpy模块]()
+  * [3 - pandas模块]()
+  * [4 - matplotlib模块]()
+* **【三】Python web框架**
+  * [1 - Django框架](note/Python/PythonWeb框架/Django/)
+  * [2 - Flask框架](note/Python/PythonWeb框架/Flask/Flask.md)
+  * [3 - Sanic框架]()
 
 
 # 🚀 计算机基础
@@ -65,7 +69,12 @@
 
 * **[笔记]()**
 
+## 常用工具
 
+- [git]()
+- [docker]()
+- [nginx]()
+- 
 
 # 📘 数学基础
 
