@@ -1,0 +1,56 @@
+属性：
+                    width:50px                              宽度50
+                    height:50px                             高度50
+    - padding
+                    padding:20px                            上下左右20
+                    padding:20px 30px                       上下20 左右30
+                    padding:20px 30px 40px                  上20 左右30 下40
+                    padding:20px 30px 40px 50px             上20 右30 下40 左50
+    - margin
+                    margin:20px                             外边距20
+    - border                                            三要素，线型的宽度，线型的样式，线型的颜色
+                    border-right:1px solid green            右边框1px,实线，绿色
+                    border-left:1px dotted green            左边距1px,点心，绿色
+                    border-top:1px double green             上边距1px,双线，绿色
+                    border-bottom:1px dashed green          底边距1px,虚线，绿色
+                    border-left-style:solid                 左边框实线
+                    border-left-width:1px                   左边框宽度1
+                    border-left-color:yellow                左边框黄色
+                    border-color:yellow green               多个值遵循上下左右
+                    border-radius:20px                      切半径20px的圆角
+                                                            一个值:四个角
+                                                            二个值:左上角和右下角用第一个值，右上角和左下角使用第二个值
+                                                            三个值:表示左上角使用第一个值，右上角和左下角使用第二个值，右下角使用第三个值
+                                                            四个值:如果设置四个值，则依次对应左上角、右上角、右下角、左下角（顺时针顺序）。
+    - margin    在标准文档流下，水平方向不会出问题，垂直方向上会出现塌陷问题，调子盒子父盒子也会移动
+                    margin-left:20                          左外边距20
+
+    - display   在标准文档流下
+                    display:block                           独占一行，可以设置宽高，默认是子盒子的宽度100%
+                    display:inline                          在一行内显示，不可以设置宽高，根据内容显示宽高
+                    display:inline-block                    在一行内显示，可以设置宽高
+                    display:none                            不显示，隐藏，不在文档占位置
+    - background
+                    background-color:rgb(20,20,20)          调整背景颜色
+                    background-image:url('./xxx.png')       设置背景
+                    background-position:10px 50px           设置图片在盒子中的初始位置；取值有top,left,center,百分比，px,也可以单个使用background-position-x
+                    background-repeat:repeat-y              沿y轴平铺，repeat-x：沿x轴平铺   repeat/spance：两个方向平铺    no-repeat：不平铺
+                    background-size:800px 800px             设置背景图片大小 contain：调到最大且最适宜   cover调到铺满，会出现裁剪  用百分比则显示父元素的百分比位置
+                    background-origin:pandding-box          根据内边框定位，    content-box 背景图像相对于内容框来定位    border-box 背景图像相对于边框盒来定位。
+                    background-clip:border-box              背景被裁剪到边框盒     padding-box：背景被裁剪到内边距框     content-box：背景被裁剪到内容框。
+
+    - outline   轮廓          可以设置input的轮廓
+                    outline-color:red                       红色轮廓
+                    outline-style:dotted                    (dotted)点线  (dashed)虚线  (solid)实线  (double)双线  (groove)3D凹槽  (ridge)3D凸槽  (inset)3D凹边  (outset)3D凸边
+                    outline-width:30px                      30px厚度
+                    outline:red dotted 2px                  红色厚度2px点线
+
+    - opacity
+                    opacity:0.6                             透明度0.6
+
+    - box-shadow
+                    box-shadow: 10px 10px 5px #888888;      h-shadow 必需，水平阴影的位置，允许负值      v-shadow 必需。垂直阴影的位置。允许负值
+                                                            blur 可选。模糊距离。                        spread 可选。阴影的尺寸
+                                                            color 可选。阴影的颜色。                     inset 可选。将外部阴影 (outset) 改为内部阴影。
+
+

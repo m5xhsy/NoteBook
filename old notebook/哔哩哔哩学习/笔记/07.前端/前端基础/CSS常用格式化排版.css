@@ -1,0 +1,100 @@
+文本：
+    - 字体
+        font-family:"Microsoft Yahei";                          字体
+        font-family:'Microsoft Yahei','宋体','黑体';            备选字体，从左到右解析
+
+    - 字体大小//常用单位px、em、rem,浏览器默认字体大小16
+        font-size:16px;                                         字体大小16像素
+
+    - 字体颜色//red红色;yellow黄色;green绿色;blue蓝色;
+        color:red;                                              红色字体，
+        color:#ffffff;                                          十六进制表示白色
+        color:rgb(255,255,255);                                 RGB表示的白色
+        color:rgba(255,255,255,0.5);                            半透明的白色，a表示alpha值，在0~1之间
+
+    - 字体样式
+        font-style:normal;                                      默认，表示普通字体
+        font-style:italic;                                      如果当前字体的斜体版本可用，那么文本设置为斜体版本；如果不可用，那么会利用 oblique 状态来模拟 italics。常用
+        font-style:oblique;                                     将文本设置为斜体字体的模拟版本，也就是将普通文本倾斜的样式应用到文本中。
+
+    - 字体粗细
+        font-weight:normal;                                     普通的字体粗细，默认
+        font-weight:bold;                                       加粗的字体粗细
+        font-weight:lighter;                                    比普通字体更细的字体
+        font-weight:bolder;                                     比bold更粗的字体
+        font-weight:900;                                        400表示normal
+
+    - 文本修饰
+        text-decoration:none;                                   无文本的修饰
+        text-decoration:underline;                              文本下划线
+        text-decoration:overline;                               文本上划线
+        text-decoration:line-through;                           穿过文本的线
+
+    - 文本缩进
+        text-indent:32;                                         如果字体大小16px，那么要空2格要设置32px,或者2em
+
+    - 行间距
+        line-height:2em;                                        2倍行间距
+
+    - 字间距
+        letter-spacing:5px;                                     调整文字之间的间距
+        word-soacing:10px;                                      调整英文单词之间的间距
+
+    - 文本对齐
+        text-align:justify;                                     两端对齐；英文只能单词，不能字母，不然会超出盒子
+        text-align:left;                                        左对齐
+        text-align:right;                                       右对齐
+        text-align:center;                                      居中
+
+    - 字符转换
+        text-transform:none;                                    默认，不处理
+        text-transform:uppercase;                               字母全部大写
+        text-transform:lowercase;                               字母全部小写
+        text-transform:capitalize;                              首字母大写
+
+    - 空白符处理
+        white-space:inherit;                                    规定应该从父元素继承 white-space 属性的值。                       空白符 换行符 自动换行
+        white-space:normal;                                     默认。空白会被浏览器忽略。                                        合并   忽略   允许
+        white-space:pre;                                        空白会被浏览器保留。其行为方式类似 HTML 中的 <pre> 标签。         保留   保留   不允许
+        white-space:nowrap;                                     文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。    合并   忽略   不允许
+        white-space:pre-wrap;                                   保留空白符序列，但是正常地进行换行。                              保留   保留   允许
+        white-space:pre-line;                                   合并空白符序列，但是保留换行符。                                  合并   保留   允许
+
+    - 文本方向
+        direction:rtl;                                          ltr从左到右     rtl从右到左      inherit从父元素继承direction属性的值。
+
+    - 文本阴影
+        text-shadow:10px 10px 5px #888888;                      h-shadow 必需，水平阴影的位置，允许负值      v-shadow 必需。垂直阴影的位置。允许负值。 测试
+                                                                blur 可选。模糊距离。                        spread 可选。阴影的尺寸
+                                                                color 可选。阴影的颜色。                     inset 可选。将外部阴影 (outset) 改为内部阴影。
+
+    - 小型大写
+        font-variant:small-caps;                                小写变成小字体的大写，大写字母不变    normal 默认值。浏览器会显示一个标准的字体。   可继承
+
+    - 文本溢出处理
+        text-overflow:ellipsis;                                 clip 修剪文本   ellipsis 显示省略符号来代表被修剪的文本    string 使用给定的字符串来代表被修剪的文本。
+        text-wrap:normal;                                       normal 只在允许的换行点进行换行  none 不换行,会溢出    unrestricted 在任意两个字符间换行      suppress 压缩元素中的换行。浏览器只在行中没有其他有效换行点时进行换行
+        word-break:normal;                                      normal 使用浏览器默认的换行规则    break-all 允许在单词内换行     keep-all 只能在半角空格或连字符处换行
+        word-wrap:normal;                                       normal 只在允许的断字点换行（浏览器保持默认处理）    break-word 在长单词或 URL 地址内部进行换行
+
+
+
+
+表格
+    border: 1px solid blue;                                     边框
+    border-collapse:collapse;                                   折叠为单一边框
+    width:200px;                                                表格宽度
+    height:20px;                                                表格高度
+    backfround-color:red;                                       设置颜色
+    text-align:left;                                            对齐方式
+    border-collapse:collapse;                                   默认值，合并单元格。边框会被分开。不会忽略 border-spacing 和 empty-cells 属性。      collapse 如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。
+    empty-cells:hide;                                           hide 不在空单元格周围绘制边框。    show 在空单元格周围绘制边框。默认。
+    caption-side:bottom;                                        top 默认值。把表格标题定位在表格之上。    bottom 把表格标题定位在表格之下。
+    border-spacing:10px 50px;                                   规定相邻单元的边框之间的距离。
+    table-layout:fixed;                                         automatic 默认。列宽度由单元格内容设定。  fixed 列宽由表格宽度和列宽度设定。
+
+
+    补充：
+        饱满字：国
+        font:16px/40px '微软雅黑'                               字体大小16px/行高40px 字体微软雅黑
+        font:16px/10 '微软雅黑'                                 字体大小16px/行高10倍字体高度 字体微软雅黑

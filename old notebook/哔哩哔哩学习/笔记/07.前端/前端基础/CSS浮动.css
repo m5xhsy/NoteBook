@@ -1,0 +1,27 @@
+- 浮动：脱离标准文档流，能实现元素并排
+            float:none              不浮动
+            float:left              左浮动
+            float:right             右浮动
+         浮动带来的问题：子盒子浮动，不在页面上占位置，如果父盒子不设置高度，那么撑不起父盒子，页面出现紊乱
+         清除浮动：
+             1. 父盒子设置高度
+             2. clear   给浮动的元素的最后面，加一个空的块级标签(标准文档流的块级标签)，给当前这个标签设置一个classfix类名，设置该标签属性clear:both
+                     clear:both
+                     clear:left
+                     clear:right
+                     问题：代码冗余
+             3.伪元素清除法     在父盒子添加clearfix
+                     .clearfix.after{
+                         content:'.';
+                         display:block;
+                         visibility:hidden;
+                         height:0;
+                         clear:both;
+                     }
+             4. 给父盒子设置overflow:hidden清除浮动，也可以给父盒子设置overflow设置overflow:hidden解决子盒子margin塌陷问题
+                     overflow其他属性：
+                         overflow:visible        默认值，内容不会被修剪
+                         overflow:hidden         内容会被修剪，其余内容不可见
+                         overflow:auto           如果内容被修剪，浏览器会设置滚动条
+                         overflow:scrll          内容会被修建，但是浏览器会设置滚动条
+                         overflow:inherit        规定会从父元素继承overflow的属性的值

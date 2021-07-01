@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="msg" type="text">
+<button id="send_btn">发送</button>
+<div id="text">
+
+</div>
+<script type="application/javascript">
+    var ws = new WebSocket("ws://127.0.0.1:5000/feed")
+    document.getElementById("send_btn").addEventListener("click",function () {
+        var msg = document.getElementById("msg").value
+        console.log(msg)
+        ws.send(msg)
+    })
+    ws.onmessage = function (data){
+        console.log(data)
+        document.getElementById("text").innerHTML += "<p>"+data.data +"</p>"
+    }
+
+</script>
+</body>
+</html>
