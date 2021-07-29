@@ -70,7 +70,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4
 ## 使用
 
 ```python
-pip2 install pyjwt
+pip3 install pyjwt
 ```
 
 ```python

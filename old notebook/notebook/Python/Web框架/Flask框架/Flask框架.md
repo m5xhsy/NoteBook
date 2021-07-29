@@ -71,8 +71,8 @@ AssertionError: View function mapping is overwriting an existing endpoint functi
    def session_verify(func):
    	@functools.wraps(func)		# 保留原来函数属性
    	def verify():
-   		response = func()
-   	return response
+   		return func()
+   	return verify
    	
    方法二:flask提供方法
    @app.route('/',endpoint=index)	# endpoint=index  

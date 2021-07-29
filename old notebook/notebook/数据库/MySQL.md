@@ -45,7 +45,12 @@ Remove test database and access to it? [Y/n] 			# 删除测试数据库(Y)
 Reload privilege tables now? [Y/n] 						# 刷新权限表(Y)
 ```
 
+## 开启密码验证
 
+```mysql
+> update user set plugin = 'mysql_native_password' where user = 'root';
+> flush privileges
+```
 
 ## 配置编码格式
 
