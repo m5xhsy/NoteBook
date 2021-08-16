@@ -14,3 +14,7 @@
 |         |                                      |
 
 ### 1.2 
+
+https://www.linaro.org/
+
+https://developer.arm.com/
