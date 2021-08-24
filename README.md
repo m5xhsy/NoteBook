@@ -47,7 +47,7 @@
   - [1 - jupyter的使用]()
   - [2 - numpy模块]()
   - [3 - pandas模块]()
-  - [4 - matplotlib模块](）
+  - [4 - matplotlib模块]()
 - **【三】Python web框架**
   - [1 - Django框架](note/Python/PythonWeb框架/Django/)
   - [2 - Flask框架](note/Python/PythonWeb框架/Flask/Flask.md)
@@ -72,7 +72,7 @@
 - **【一】算法**
   - [排序算法]()
 - **【二】数据结构**
-  - 链表
+  - [链表]()
 
 ## 📜 数据库
 - [Mysql]()
