@@ -262,8 +262,6 @@ source /etc/profile.d/python.sh
 配置环境变量
 ```
 
-
-
 ### 包的命名规范
 
 ```shell
@@ -279,8 +277,6 @@ vim /etc/profile
 PATH=$PATH:/opt/ruby/bin
 source /etc/profile
 ```
-
-
 
 ## 命令
 

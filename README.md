@@ -58,8 +58,8 @@
 ## 🏡 Linux相关
 
 - **【一】Linux基础**
-  - [常用命令]()
-  - [Shell脚本]()
+  - [常用命令](note/操作系统/常用命令.md)
+  - [Shell脚本](note/操作系统/Shell脚本.md)
   - [CentOS](note/操作系统/CentOS.md)
 - **【二】常用软件**
   - [Git版本控制]()
