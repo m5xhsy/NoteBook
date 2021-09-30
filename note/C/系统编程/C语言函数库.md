@@ -1244,7 +1244,7 @@ int main()
 >
 > **函数定义：**`clock_t clock(void);`
 >
-> **函数说明：** 获取进程开始到调用clock()所占cpu的大约时间
+> **函数说明：**表示进程从启动到调用clock函数，使用了多少CPU时间。将返回值除以CLOCKS_PER_SEC，就能得到以秒为单位的时间。
 >
 > **返回值：**返回进程所占cpu的大约时间
 >
@@ -1254,6 +1254,7 @@ int main()
 #include <stdio.h>
 #include <time.h>
 
+// 3m
 int main()
 {
 	int i, b;
@@ -1268,3 +1269,9 @@ int main()
 	return 0;
 }
 ```
+
+
+
+int clock_getres(clockid_t clk_id, struct timespec *res);
+int clock_gettime(clockid_t clk_id, struct timespec *tp); 
+int clock_settime(clockid_t clk_id, const struct timespec *tp);
