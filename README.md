@@ -15,15 +15,15 @@
   - [1 - 编译工具常用选项](note/C/系统编程/编译工具常用选项.md)
   - [2 - C语言函数库](note/C/系统编程/C语言函数库目录.md)
 - **【二】xxx**
-  - [1 - xxx]()
+  - 1 - xxx
 
 ## ☁️ C++
 
 - **【一】C++基础编程**
-  - [1 - 数据类型]()
-  - [2 - 程序流程结构]()
-  - [3 - 数组]()
-  - [4 - 函数]() 
+  - 1 - 数据类型
+  - 2 - 程序流程结构
+  - 3 - 数组
+  - 4 - 函数
   - [5 - 指针](note/C++/C++基础编程/指针.md)
   - [6 - 结构体](note/C++/C++基础编程/结构体.md)
 - **【二】c++核心编程**
@@ -40,18 +40,18 @@
 ## 🐍 Python
 
 - **【一】Python 基础**
-  - [1 - 包管理工具]()
+  - 1 - 包管理工具
   - [2 - 内置模块](note/Pyhton/Python基础/模块/)
   - ......
 - **【二】Python 数据分析**  
-  - [1 - jupyter的使用]()
-  - [2 - numpy模块]()
-  - [3 - pandas模块]()
-  - [4 - matplotlib模块]()
+  - 1 - jupyter的使用
+  - 2 - numpy模块
+  - 3 - pandas模块
+  - 4 - matplotlib模块
 - **【三】Python web框架**
   - [1 - Django框架](note/Python/PythonWeb框架/Django/)
   - [2 - Flask框架](note/Python/PythonWeb框架/Flask/Flask.md)
-  - [3 - Sanic框架]()
+  - 3 - Sanic框架
 
 # 🚀 计算机基础
 
@@ -62,23 +62,25 @@
   - [Shell脚本](note/操作系统/Shell脚本.md)
   - [CentOS](note/操作系统/CentOS.md)
 - **【二】常用软件**
-  - [Git版本控制]()
-  - [Docker容器]()
-  - [Nginx服务器]()
-  - [Samba服务器]()
+  - Git版本控制
+  - Docker容器
+  - Nginx服务器
+  - NFS服务器
+  - Tftp服务器
+  - Samba服务器
 
 ## ⏳ 算法与数据结构
 
 - **【一】算法**
-  - [排序算法]()
+  - 排序算法
 - **【二】数据结构**
-  - [链表]()
+  - 链表
 
 ## 📜 数据库
-- [Mysql]()
-- [Redis]()
-- [mongodb]()
-- [ElasticSearch]()
+- Mysql
+- Redis
+- mongodb
+- ElasticSearch
 
 # 👻嵌入式开发
 
@@ -104,24 +106,24 @@
 ## 🎃网络协议
 
 - **【一】链路层协议**
-  - [PPP协议]()
+  - PPP协议
   - PPTP
   - L2TP
 - **【二】网络层协议**
-  - [IP协议]()
-  - [ARP协议]()
-  - [ICMP协议]()
-  - [IGMP协议]()
-  - [L2TP协议]()
-  - [PPTP协议]()
+  - IP协议
+  - ARP协议
+  - ICMP协议
+  - IGMP协议
+  - L2TP协议
+  - PPTP协议
 - **【三】传输层协议**
-  - [TCP协议]()
-  - [UDP协议]()
+  - TCP协议]
+  - UDP协议
 - **【四】应用层协议**
-  - [FTP协议]()
-  - [HTTP协议]()
-  - [Coap协议]()
-  - [MQTT协议]()
+  - FTP协议
+  - HTTP协议
+  - Coap协议
+  - MQTT协议
 
 ## 📺通信协议
 
