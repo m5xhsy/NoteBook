@@ -14,6 +14,7 @@
 - **【一】系统编程**
   - [1 - 编译工具常用选项](note/C/系统编程/编译工具常用选项.md)
   - [2 - C语言函数库](note/C/系统编程/C语言函数库目录.md)
+  - [3 - Makefile编写](note/C/系统编程/Makefile.md)
 - **【二】xxx**
   - 1 - xxx
 
@@ -58,16 +59,16 @@
 ## 🏡 Linux相关
 
 - **【一】Linux基础**
-  - [常用命令](note/操作系统/常用命令.md)
-  - [Shell脚本](note/操作系统/Shell脚本.md)
-  - [CentOS](note/操作系统/CentOS.md)
+  - [1 - 常用命令](note/操作系统/常用命令.md)
+  - [2 - Shell脚本](note/操作系统/Shell脚本.md)
+  - [3 - CentOS](note/操作系统/CentOS.md)
 - **【二】常用软件**
-  - Git版本控制
-  - Docker容器
-  - Nginx服务器
-  - NFS服务器
-  - Tftp服务器
-  - Samba服务器
+  - 1 - Git版本控制
+  - 2 - Docker容器
+  - 3 - Nginx服务器
+  - 4 - NFS服务器
+  - 5 - Tftp服务器
+  - 6 - Samba服务器
 
 ## ⏳ 算法与数据结构
 
@@ -87,9 +88,11 @@
 ## 🐼UBoot  
 
 - **【一】基本介绍**
-  - [常用命令](note/嵌入式开发/UBoot/UBoot常用命令.md)
+  - [1 - 常用命令](note/嵌入式开发/UBoot/基本介绍/UBoot常用命令.md)
+  - [2 - 目录结构](note/嵌入式开发/UBoot/基本介绍/UBoot目录结构.md)
+  - [3 - 编译移植](note/嵌入式开发/UBoot/基本介绍/UBoot编译移植.md)
 - **【二】源码分析**
-  - aaaa
+  - [1 - 启动流程]()
   - bbbb
 
 ## 🐯Kernel
