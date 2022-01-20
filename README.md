@@ -92,8 +92,10 @@
   - [2 - 目录结构](note/嵌入式开发/UBoot/基本介绍/UBoot目录结构.md)
   - [3 - 编译移植](note/嵌入式开发/UBoot/基本介绍/UBoot编译移植.md)
 - **【二】源码分析**
-  - [1 - 启动流程]()
+  - [1 - Makefile](note/嵌入式开发/UBoot/源码分析/Makefile解析.md)
+  - [2 - 启动流程](note/嵌入式开发/UBoot/源码分析/Uboot启动流程.md)
   - bbbb
+
 
 ## 🐯Kernel
 

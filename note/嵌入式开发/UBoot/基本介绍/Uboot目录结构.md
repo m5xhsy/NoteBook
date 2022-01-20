@@ -125,3 +125,53 @@ $(deps_u-boot.lds):
 ```
 
 ### 5.Makefile文件
+
+这个`Makefile`文件原来初始化编译环境，例如用户的配置文件、编译工具等等，同时它会调用子目录下面的`Makefile`文件。这种嵌套方式在大型项目里面很常见，方便管理各个模块的链接编译。例如`drivers/adc/Makefile`文件就主要负责`drivers/adc/`这个模块的链接编译。
+
+### 6.u-boot.xxx文件
+
+`u-boot.xxx`也是一系列文件，这些文件含义如下：
+
+- u-boot：编译出来的ELF格式的uboot镜像。
+- u-boot.bin：编译出来的二进制可执行镜像文件。
+- u-boot.cfg：uboot的另外一种配置文件。
+- u-boot.imx：u-boot.bin添加头部信息以后的文件，NXP专用。
+- u-boot.lds：链接脚本。
+- u-boot.map：u-boot映射文件，可以查看某个函数被映射到哪个地址。
+- u-boot.srec：S-Record格式的镜像文件。
+- u-boot.sym：uboot符号文件。
+- u-boot-nodtb.bin：和u-boot.bin一样。
+
+### 7.config文件
+
+该文件是uboot的配置文件，如下所示，文件中的配置选项都是以"CONFIG"开头的，这些配置项就是`Makefile`中的变量，因此后面都会配置对应的值，在编译过程中`Makefile`或者子`Makefile`会调用这些变量。在配置文件中，有许多变量的值为`y`,这个`y`用于控制某项功能的使能。例如`CONFIG_CMD_BOOTM=y`，这个变量的值就为`y`，在`cmd/Makefile`文件中有一行这样的代码`obj-$(CONFIG_CMD_BOOTM) += bootm.o`，也就是说，如果使能的化，`bootm.o`这个文件名称会变添加进`obj-y`这个变量中，在编译时就会编译这个文件。
+
+```makefile
+#
+# Automatically generated file; DO NOT EDIT.
+# U-Boot 2016.03 Configuration
+#
+CONFIG_CREATE_ARCH_SYMLINK=y
+CONFIG_HAVE_GENERIC_BOARD=y
+CONFIG_SYS_GENERIC_BOARD=y
+…………
+CONFIG_SYS_ARCH="arm"
+CONFIG_SYS_CPU="armv7"
+CONFIG_SYS_SOC="mx6"
+CONFIG_SYS_VENDOR="freescale"
+CONFIG_SYS_BOARD="mx6ullevk"
+CONFIG_SYS_CONFIG_NAME="mx6ullevk"
+
+#
+# ARM architecture
+#
+CONFIG_HAS_VBAR=y
+CONFIG_HAS_THUMB2=y
+CONFIG_CPU_V7=y
+# CONFIG_SEMIHOSTING is not set
+CONFIG_SYS_L2CACHE_OFF=y
+# CONFIG_ARCH_AT91 is not set
+# CONFIG_TARGET_EDB93XX is not set
+…………
+```
+
